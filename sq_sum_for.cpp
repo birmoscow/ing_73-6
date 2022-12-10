@@ -10,7 +10,8 @@ int main() {
   
   for (int buf; count > 0 ; count--) {
     cin >> buf;
-    sum += buf * buf;
+    if ( buf == 5 ) continue;
+    sum += buf * buf; // sum = sum + buf * buf;
   }
 
   cout << "Ответ: " << sum;
